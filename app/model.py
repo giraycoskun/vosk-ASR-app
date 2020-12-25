@@ -2,7 +2,7 @@
 # ffmpeg
 # vosk
 ##
-
+"""
 import vosk
 import os
 import sys
@@ -54,3 +54,4 @@ def run_ASR(filename):
 
 if __name__ == '__main__':
     run_ASR()
+"""
