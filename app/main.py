@@ -32,7 +32,7 @@ def upload_file():
         if 'audio' in request.files:
             f = request.files['audio']
             if f.filename != '' and allowed_file(f.filename):
-                file_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename))
+                file_path = secure_filename(f.filename)
                 f.save(file_path)
                 session["filepath"] = file_path
                 return redirect(url_for('output'))
