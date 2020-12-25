@@ -53,7 +53,7 @@ from vosk import Model, KaldiRecognizer, SetLogLevel
 
 def run_ASR(filename):
 
-    model_path = "./model"
+    model_path = "./app/model"
     audio_filename = filename
 
 
