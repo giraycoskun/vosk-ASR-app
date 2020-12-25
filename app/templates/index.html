@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{%block title %} ASR App {% endblock %}
+
+
+{% block intro %}
+
+<p class="text-center Roboto"> 
+
+Designed as a command line tool to convert audio files or youtube files to text.
+It is a simple approach and not suitable for professional usage.
+<br><br>
+Designed by:
+<br>      
+<a href = "mailto: giraycoskun@sabanciuniv.edu">giraycoskun@sabanciuniv.edu</a>
+</p>
+
+{% endblock %}
+
+{% block file_input %}
+
+
+<div class="p-3 mt-2 text-center">
+      <form action="/uploader" method="POST" enctype = "multipart/form-data">
+      <input name="audio" class="form-control form-control-lg" id="formFileLg" type="file">
+      <button type="submit" class="btn btn-primary btn-lg btn-block mt-1">Upload</button>
+      </form>
+</div>
+
+
+{% endblock %}

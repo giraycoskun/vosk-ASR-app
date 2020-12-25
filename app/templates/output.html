@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{%block title %} ASR Output {% endblock %}
+
+{% block intro %}
+<div class="text-center">
+    <a href="{{ url_for('.home') }}" class="btn btn-primary btn-lg mb-3" role="button" aria-disabled="true">Home</a>
+</div>
+
+<div class="h3 text-center p-3 mb-2 bg-warning text-dark Roboto">
+    <p>Text Output from Vosk Model:</p>
+</div>
+
+
+
+{% endblock %}
+
+
+{% block output %} 
+
+<div class="p-3 mb-2 bg-info text-white">
+    <p>{{text}}</p>
+</div>
+
+{% endblock %}
